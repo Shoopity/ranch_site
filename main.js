@@ -1,8 +1,5 @@
 /******** Mobile Menu ***********************/
-document.getElementById('hamburger').addEventListener('click', function() {
-  const menu = document.getElementById('mobileMenu');
-  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-});
+// Moved to CSS with checkbox toggle
 /*********************************************/
 
 /*********** Lightbox stuff *****************/
@@ -52,45 +49,5 @@ document.querySelectorAll('a[href]').forEach(a => {
 });
 
 /*************Nav menu generation *********************/
-document.addEventListener('DOMContentLoaded', () => {
-  const hNav = document.querySelector('header .main-nav');
-  const fNav = document.querySelector('footer .main-nav');
-  const mNav = document.querySelector('header .mobile-menu');
-
-  [hNav, fNav, mNav].forEach(nav => {
-    const links = [
-      { href: './index.html', text: 'Home' },
-      { href: './cabins.html', text: 'Cabins' },
-      { href: './rates.html', text: 'Rates and Reservations' },
-      { href: './story.html', text: 'Story of the Ranch' },
-      { href: './attractions.html', text: 'Area Attractions' },
-      { href: './photos.html', text: 'Photos and Directions' }
-    ];
-
-    const ul = document.createElement('ul');
-    ul.className = 'nav-list';
-
-    links.forEach(link => {
-      const li = document.createElement('li');
-      
-      // Automatically mark current page based on URL
-      const linkPath = link.href.replace(/^\.\/+/,'');
-      let currentPath = window.location.pathname;
-      if (currentPath.endsWith('/')) { currentPath += 'index.html'; }
-      currentPath = currentPath.slice(1);
-      console.log(window.location.pathname)
-      if (currentPath.endsWith(linkPath)) {
-        li.classList.add('current-page');
-      }
-
-      const a = document.createElement('a');
-      a.href = link.href;
-      a.textContent = link.text;
-
-      li.appendChild(a);
-      ul.appendChild(li);
-    });
-    nav.appendChild(ul);
-  });
-});
+// Moved to HTML
 /******************************************************/
