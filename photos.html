@@ -8,13 +8,32 @@
 </head>
 <body id="photos">
   <header>
-    <div class="hamburger" id="hamburger">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
       <span></span>
       <span></span>
       <span></span>
-    </div>
-    <nav class="mobile-menu" id="mobileMenu"> </nav>
-    <nav class="main-nav"><!--Check the main.js for links--></nav>
+    </label>
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./cabins.html">Cabins</a></li>
+        <li><a href="./rates.html">Rates and Reservations</a></li>
+        <li><a href="./story.html">Story of the Ranch</a></li>
+        <li><a href="./attractions.html">Area Attractions</a></li>
+        <li><a href="./photos.html">Photos and Directions</a></li>
+      </ul>
+    </nav>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./cabins.html">Cabins</a></li>
+        <li><a href="./rates.html">Rates and Reservations</a></li>
+        <li><a href="./story.html">Story of the Ranch</a></li>
+        <li><a href="./attractions.html">Area Attractions</a></li>
+        <li><a href="./photos.html">Photos and Directions</a></li>
+      </ul>
+    </nav>
     <div class="bannerMessage" id="greeting">
       <h1>THE CONTINENTAL RANCH</h1>
       <h2>CABIN RENTALS</h2>
@@ -30,7 +49,7 @@
           <div class="caption"></div>
         </div>
         <div class="carousel-slide">
-          <img src="./images/Aspens_Close.jpg" alt="Aspen on FS Rd 510">
+          <img src="./images/Aspens_Close.jpg" alt="Aspen on FS Rd 510" loading="lazy">
           <div class="caption"></div>
         </div>
         <div class="carousel-slide">
@@ -129,7 +148,16 @@
     <div class="divider">
       <img src="./images/Divider.png">
     </div>
-   <nav class="main-nav"><!--Check the main.js for links--></nav>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./cabins.html">Cabins</a></li>
+        <li><a href="./rates.html">Rates and Reservations</a></li>
+        <li><a href="./story.html">Story of the Ranch</a></li>
+        <li><a href="./attractions.html">Area Attractions</a></li>
+        <li><a href="./photos.html">Photos and Directions</a></li>
+      </ul>
+    </nav>
   </footer>
   <script src="./photoScroller.js"></script>
   <script src="./main.js"></script>

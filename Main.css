@@ -21,10 +21,47 @@ body {
   color: black;
 }
 
-.main-nav .nav-list li.current-page {
+/* Current page highlighting using body IDs */
+body#home .nav-list li:nth-child(1),
+body#home .mobile-menu .nav-list li:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  text-decoration: none;
+  font-weight: bold;
+}
+
+body#cabins .nav-list li:nth-child(2),
+body#cabins .mobile-menu .nav-list li:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body#rates .nav-list li:nth-child(3),
+body#rates .mobile-menu .nav-list li:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body#story .nav-list li:nth-child(4),
+body#story .mobile-menu .nav-list li:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body#attractions .nav-list li:nth-child(5),
+body#attractions .mobile-menu .nav-list li:nth-child(5) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body#photos .nav-list li:nth-child(6),
+body#photos .mobile-menu .nav-list li:nth-child(6) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 a {
@@ -149,6 +186,14 @@ a {
   margin: 4px 0;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked ~ .mobile-menu {
+  display: block;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -180,8 +225,9 @@ a {
   .mobile-menu li {
     border-bottom: 1px solid #ccc;
   }
-  .mobile-menu li.current-page {
+  .mobile-menu li.current {
     background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
   }
   .mobile-menu a {
     display: block;
